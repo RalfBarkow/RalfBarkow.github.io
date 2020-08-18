@@ -1,0 +1,20 @@
+site_name: /rgb
+dev_addr: '0.0.0.0:8080'
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+theme:
+  name: material
+  language: en
+  font: false
+  favicon: favicon.png
+  logo: 'assets/images/rgb.png'
+
+site_author: "Ralf Barkow"
+extra_css:
+    - css/extra.css
+nav:
+  - Home: index.md
+  - Set-up: user-guide/getting-started.md
+  - Imprint: legal/imprint.md
