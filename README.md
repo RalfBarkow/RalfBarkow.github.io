@@ -3,7 +3,7 @@ MkDocs in Docker container.
 
 ## Usage
 
-Clone this repository. Write docs to `container/mkdocs/docs`.
+Clone [this](https://github.com/jamct/mkdocker) repository. Write docs to `container/mkdocs/docs`.
 
 
 ## Develop docs
