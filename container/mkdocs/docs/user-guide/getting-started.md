@@ -40,7 +40,7 @@ After making and verifying updates to your project you need to change directorie
 cd ../orgname.github.io/
 mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
 ```
-Deviating from this, I want to work with only one repository, as described by Jan Mahn. 
+Deviating from this, I want to work with only one repository, based on Jan Mahn's "Doku-Freuden" (German for documentary delights) article. 
 ```shell
 cd RalfBarkow.github.io
 mkdocs gh-deploy --config-file container/mkdocs/mkdocs.yml --remote-branch master
