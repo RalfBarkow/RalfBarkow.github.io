@@ -1,27 +1,12 @@
 # Welcome
 
-This is a documentation.
+This is the GitHub Pages' user site of Ralf Barkow.  
+The following is an overview of the 4 main projects I am working on.  
+Actually there are 5 projects.  
 
-!!! quote "A quote"
-    Markdown is very flexible.
-
-To the [Imprint](legal/imprint.md).
-​
-​
-# First level heading
-
-## Heading 2nd level
-```
-function someCode(){
-
-}
-```
-
-* A bulleted list
-
-The text is *italic*, this **bold**
-
-|Header|Header|
-|---|---|
-|Cell|Cell|
-​
+## 5 fingers of one hand
+* Zettelkasten
+* DMX Platform
+* dmx-zettelkasten plugin
+* Combine these 3 to 1 Freedombox App
+* How to set-up all this (see next section)

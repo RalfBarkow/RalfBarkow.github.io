@@ -17,4 +17,6 @@ extra_css:
 nav:
   - Home: index.md
   - Set-up: user-guide/getting-started.md
+  - Projects:
+      - Overview: projects/index.md
   - Imprint: legal/imprint.md
