@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#get-started" class="md-skip">
           Skip to content
         </a>
       
@@ -228,6 +228,48 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Projects
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Projects" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item">
     <a href="../../legal/imprint.md" title="Imprint" class="md-nav__link">
       Imprint
@@ -297,9 +339,9 @@
                   
                 
                 
-                <h1 id="getting-started">Getting started</h1>
+                <h1 id="get-started">Get started</h1>
 <p>Read <a href="https://www.heise.de/select/ct/2020/18/2000809371395242374">Mahn, J. (2020) Doku-Freuden</a> (in German).<br />
-(I'm changing my GitHub Pages user site to MkDocs.)</p>
+(I'm changing my GitHub Pages' user site to MkDocs.)</p>
 <details class="note"><summary>pyenv version</summary><div class="highlight"><pre><span></span><code>$ pyenv version
 <span class="m">3</span>.8.5
 </code></pre></div>
@@ -317,14 +359,20 @@
 <h2 id="build-a-multistage-image">Build a multistage image</h2>
 <p>Read <a href="https://www.heise.de/select/ct/2019/3/1548578276157318">Mahn, J. (2019) Raketenstufenbau</a> (in German).</p>
 <h2 id="deploy-the-docs">Deploy the docs</h2>
-<div class="highlight"><pre><span></span><code>mkdocs gh-deploy --config-file container/mkdocs/mkdocs.yml --remote-branch master
+<p>Regarding Organization and User Pages, the <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/#organization-and-user-pages">mkdocs documentation</a> recommends to work with copies of 2 repositories on our local system. For example, consider the following file structure:
+<div class="highlight"><pre><span></span><code>my-project/
+    mkdocs.yml
+    docs/
+orgname.github.io/
 </code></pre></div>
-
-<div class="admonition danger">
-<p class="admonition-title">A hazard</p>
-</div>
-<p>Never edit files in the master branch of the pages repository by hand if using the <code>gh-deploy</code> command because you will lose your work the next time you run the command.</p>
-<p><a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">Organization and User Pages</a></p>
+After making and verifying updates to your project you need to change directories to the orgname.github.io repository and call the mkdocs gh-deploy command from there:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> ../orgname.github.io/
+mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
+</code></pre></div>
+Deviating from this, I want to work with only one repository, as described by Jan Mahn. 
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> RalfBarkow.github.io
+mkdocs gh-deploy --config-file container/mkdocs/mkdocs.yml --remote-branch master
+</code></pre></div></p>
                 
               
               
@@ -357,6 +405,20 @@
             </div>
           </a>
         
+        
+          <a href="../../projects/" title="Overview" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Overview
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
